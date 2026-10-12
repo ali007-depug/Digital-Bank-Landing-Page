@@ -15,18 +15,71 @@
     <title>digtal-bank-landing-page</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="">
+      <header
+        class="flex items-center justify-between min-h-20 px-8 max-w-7xl mx-auto"
+      >
+        <!-- logo -->
+        <a href="/" class="flex items-center">
+          <img
+            src="/images/logo-dark.svg"
+            alt="Digitalbank Logo"
+            class="logo"
+          />
+        </a>
+        <!-- navigation -->
+        <nav aria-label="Main-Navigation">
+          <!-- ul -->
+          <ul class="flex gap-5 text-neutral-gray-600 font-normal">
+            <!-- link -->
+            <li>
+              <a
+                href="#"
+                aria-current="page"
+                class="flex items-center h-20 border-b-2 border-transparent hover:border-primary-green-500 hover:text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center h-20 border-b-2 border-transparent hover:border-primary-green-500 hover:text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center h-20 border-b-2 border-transparent hover:border-primary-green-500 hover:text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center h-20 border-b-2 border-transparent hover:border-primary-green-500 hover:text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center h-20 border-b-2 border-transparent hover:border-primary-green-500 hover:text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </nav>
 
+        <!-- CTA button -->
+        <button
+          class="rounded-full px-8 py-2 cursor-pointer text-neutral-white font-medium bg-linear-to-r from-primary-green-500 to-primary-cyan-400"
+        >
+          Request Invite
+        </button>
+      </header>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
-
+      <!-- 
 
   Next generation digital banking
 
@@ -93,13 +146,13 @@
 
   Request Invite
 
-  © Digitalbank. All Rights Reserved
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  © Digitalbank. All Rights Reserved -->
 
+      <!-- <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer> -->
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
