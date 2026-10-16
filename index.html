@@ -16,8 +16,10 @@
   </head>
   <body>
     <div id="app" class="">
+                  <div class="invisible overlay fixed inset-0 w-full h-full bg-black/40  transition-opacity duration-300 ease-in-out  z-50 opacity-0 pointer-events-none"></div>
+
       <header
-        class="flex items-center justify-between min-h-20 px-8 max-w-7xl mx-auto"
+        class="flex items-center justify-between min-h-20 px-8 max-w-7xl mx-auto z-100 relative bg-neutral-white"
       >
         <!-- logo -->
         <a href="/" class="flex items-center">
@@ -28,9 +30,9 @@
           />
         </a>
         <!-- navigation -->
-        <nav aria-label="Main-Navigation">
-          <!-- ul -->
-          <ul class="flex gap-5 text-neutral-gray-600 font-normal">
+        <nav aria-label="Main-Navigation relative">
+          <!-- Desktop ul -->
+          <ul class="hidden md:flex gap-5 text-neutral-gray-600 font-normal">
             <!-- link -->
             <li>
               <a
@@ -69,15 +71,87 @@
               >
             </li>
           </ul>
+          <!-- Mobile ul -->
+          <!-- hamburger menu -->
+          <button class="mobileMenuBtn md:hidden w-8.75 cursor-pointer relative" aria-label="Hamburger Menu">
+            <!-- open  -->
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="openHamburgerMenu size-6.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <!-- close  -->
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="closeHamburgerMenu size-6.5 hidden"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <ul class="mobileNav hidden absolute w-[80%] left-1/2 top-25 -translate-x-1/2 bg-neutral-white rounded py-7  flex-col gap-5 items-center z-99 ">
+            <li>
+              <a
+                href="#"
+                aria-current="page"
+                class="flex items-center text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center text-primary-blue-950 focus-visible:border-primary-green-500 transition-colors duration-300 ease-in-out"
+                >Careers</a
+              >
+            </li>
+          </ul>
         </nav>
 
         <!-- CTA button -->
         <button
-          class="rounded-full px-8 py-2 cursor-pointer text-neutral-white font-medium bg-linear-to-r from-primary-green-500 to-primary-cyan-400"
+          class="hidden md:block rounded-full px-8 py-2 cursor-pointer text-neutral-white font-medium bg-linear-to-r from-primary-green-500 to-primary-cyan-400"
         >
           Request Invite
         </button>
       </header>
+
 
       <!-- 
 
